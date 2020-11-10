@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="basvuru.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery/3.2.1/jquery.min.js"></script>
+    <script src="basvuru.js"></script>
+</head>
+<body style="background: rgb(28,200,138);
+background: linear-gradient(90deg, rgba(28,200,138,1) 0%, rgba(34,74,190,1) 100%, rgba(0,212,255,1) 100%);">
+    
+    <div class="container bg-light mt-5" style="border: solid 2px #1c1c1c;">
+        <form action="islemler/ajax.php" enctype="multipart/form-data" method="POST" accept-charset="utf-8">
+            <div class="w-100">
+                <h1 style="text-align:center;">BAŞVURU FORMU</h1>
+            </div>
+            <hr>
+            <div class="form-row">
+              <div class="form-group col-6">
+                 <label for="ad">Ad:</label>
+                 <input type="text" class="form-control" id="ad" placeholder="Adiniz">
+              </div>
+              <div class="form-group col-6">
+                 <label for="ad">Soyad:</label>
+                 <input type="text" class="form-control" id="ad" placeholder="Soyadiniz">
+              </div>
+
+              <div class="form-group col-12">
+                 <label for="mail">E-mail Adresi:</label>
+                 <input type="email" class="form-control" id="mail" placeholder="E-mailinizi giriniz">
+              </div>
+            </div>
+            <hr>
+
+            <label for="cars">Eğitim yılınız:</label>
+            <select id="cars" name="carlist" form="carform" class="col-md-6">
+            <option value="no">Seçiniz..</option>
+            <option value="hazirlik">Hazırlık</option>
+            <option value="bir">1</option>
+            <option value="iki">2</option>
+            <option value="uc">3</option>
+            <option value="dort">4</option>
+            </select>
+
+            <hr>
+            <div>
+                <label>Uzmanlık alanlarınız :</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Simülasyon Ortamı</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Görüntü İşleme</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">İşletim Sistemi,Geliştirme Kiti</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                <label class="form-check-label" for="inlineCheckbox4">Robotik Kodlama</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                <label class="form-check-label" for="inlineCheckbox5">Yapayzeka</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                <label class="form-check-label" for="inlineCheckbox6">Güvenlik Sistemleri</label>
+            </div>
+            <hr>
+            <div>
+                <label>Seçtikleriniz alanlarla ilgili detaylı bilgi veriniz:</label>
+            </div>
+
+            <textarea name="comment" form="usrform" class="w-100" placeholder="Detaylı bilgi..."></textarea>
+
+            
+            <div class="text-center">
+                <button type="button" class="btn btn-primary mb-2" name="basvuru">Gönder</button>
+            </div>
+        </form>
+        
+    </div>
+
+</body>
+</html>
